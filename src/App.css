@@ -4,14 +4,14 @@
 }
 
 .custom-btn {
-    padding: 20px;
+    padding: 10px;
     border: none;
-    margin-right: 10px;
+    margin-right: 20px;
     text-transform: uppercase;
     width: 100px;
     font-size: 0.9rem;
-    cursor: pointer;
-    outline: none;
+    cursor:pointer;
+    outline:none;
 }
 
 .add-btn {
@@ -19,9 +19,15 @@
     color: #fff;
 }
 
+.delete-btn {
+    align-items: center;
+    background: #fc0658;
+    color:black;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 40% 30% auto;
+    grid-template-columns: 30% 30% auto;
     margin-bottom: 10px;
 }
 
@@ -38,7 +44,7 @@
 }
 
 .name-heading, .phone-heading {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: #808080;
     text-transform: uppercase;
