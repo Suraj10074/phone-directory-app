@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Header.css';
 const Header = () => {
   // Example (Inline Styling):
 
@@ -14,7 +14,8 @@ const Header = () => {
   */
 
   // Approach 2 - Moving style as constant object:
-  const headerStyle = {
+  
+  /*const headerStyle = {
     textAlign: 'center',
     padding: 20,
     background: '#000',
@@ -24,6 +25,13 @@ const Header = () => {
 
   return (
     <div style={headerStyle}>
+      Phone Directory
+    </div>
+  )
+  */
+//Ecternal Style Sheet
+  return (
+    <div className="header">
       Phone Directory
     </div>
   )
