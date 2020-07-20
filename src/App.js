@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Header from './Header'
 
-function App() {
-  return (
-    <div>
-      <div className="header">
-        Phone Directoryclear
-      </div>
-      <button>Add</button>
+class App extends Component {
+  render() {
+    return (
       <div>
-        <span>Name</span>
-        <span>Phone</span>
+        <Header />
+        <button>Add</button>
+          <div>
+            <br />  
+            <span>Name</span>
+            <br />
+            <span>Phone</span>
+          </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
