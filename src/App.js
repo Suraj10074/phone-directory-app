@@ -4,15 +4,40 @@ import './App.css'
 
 class App extends Component {
   render() {
+    let subscribers = [
+      {
+        name:"Suraj Singh",
+        phone:8962922260,
+        id:1
+      },
+      {
+        name:"Rohit Singh",
+        phone:9999999999,
+        id:2
+      }
+    ]
+
     return (
-      <div>
+      <div className="component-container">
         <Header/>
         <div className="component-body-container">
             <button className="custom-btn add-btn">Add</button>
+
             <div className="grid-container heading-container">
                 <span className="grid-item name-heading">Name</span>
                 <span className="grid-item name-heading">Phone</span>
             </div>
+
+            {
+              subscribers.map(sub => {
+                return (
+                  <div key={sub.id} className="grid-container"> 
+                    <span className="grid-item">{sub.name}</span>
+                    <span className="grid-item">{sub.phone}</span>
+                  </div>
+                  );
+                })
+            }
         </div>
       </div>
     );
