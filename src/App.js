@@ -2,25 +2,27 @@ import React, { Component } from 'react';
 import Header from './Header';
 import './App.css'
 
-class App extends Component {
-  
-  deleteHandler() {
-    alert(" Delete Name")
-  } 
+// let subscribers = [
+//   {
+//     name:"Suraj Singh",
+//     phone:8962922260,
+//     id:1
+//   },
+//   {
+//     name:"Rohit Singh",
+//     phone:9999999999,
+//     id:2
+//   }
+// ]
 
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      subscribersListToShow : []
+    }
+  }
   render() {
-    let subscribers = [
-      {
-        name:"Suraj Singh",
-        phone:8962922260,
-        id:1
-      },
-      {
-        name:"Rohit Singh",
-        phone:9999999999,
-        id:2
-      }
-    ]
 
     return (
       <div className="component-container">
@@ -34,7 +36,7 @@ class App extends Component {
             </div>
 
             {
-              subscribers.map(sub => {
+              this.state.subscribersListToShow.map(sub => {
                 return (
                   <div key={sub.id} className="grid-container"> 
                     <span className="grid-item">{sub.name}</span>
