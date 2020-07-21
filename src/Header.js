@@ -1,9 +1,7 @@
 import React from 'react';
 import './Header.css';
-const Header = () => {
-  // Example (Inline Styling):
-
-
+const Header = (props) => {
+  // Example (Inline Styling) 
   // Approach 1 - Directly writing style alongside JSX:
 
   /* return(
@@ -29,12 +27,11 @@ const Header = () => {
     </div>
   )
   */
-//Ecternal Style Sheet
+
+//External Style Sheet
   return (
     <div className="header">
-      Phone Directory
+      {props.heading}
     </div>
-  )
-
-}
+  )}
 export default Header;
