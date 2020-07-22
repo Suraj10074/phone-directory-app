@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AddSubscriber from './AddSubscriber';
-//import ShowSubscriber from './ShowSubscriber';
+import ShowSubscriber from './ShowSubscriber';
 
 class PhoneDirectory extends Component {
 
@@ -35,8 +36,10 @@ class PhoneDirectory extends Component {
 
     render() {
         return (
-                <AddSubscriber addSubscriberHandler={this.addSubscriberHandler} />
-             //  <ShowSubscriber subscribersList={this.state.subscribersList} />
+            <Router>
+                <Route exact path="/" render={(props) => <ShowSubscriber{...props} subscribersList={this.state.subscribersList} />} />
+                <Route exact path="/add" render={({ history }, props) => <AddSubscriber{...props} history={history} addSubscriberHandler={this.addSubscriberHandler} />} />
+            </Router>
         )
     }
 }
