@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/phone-directory-app/static/css/main.42f965f2.chunk.css",
+    "main.js": "/phone-directory-app/static/js/main.1a26a71e.chunk.js",
+    "main.js.map": "/phone-directory-app/static/js/main.1a26a71e.chunk.js.map",
+    "runtime-main.js": "/phone-directory-app/static/js/runtime-main.1e15a315.js",
+    "runtime-main.js.map": "/phone-directory-app/static/js/runtime-main.1e15a315.js.map",
+    "static/js/2.cc64363c.chunk.js": "/phone-directory-app/static/js/2.cc64363c.chunk.js",
+    "static/js/2.cc64363c.chunk.js.map": "/phone-directory-app/static/js/2.cc64363c.chunk.js.map",
+    "index.html": "/phone-directory-app/index.html",
+    "precache-manifest.7ec21485440d306cfa0ea8fc37bf79a8.js": "/phone-directory-app/precache-manifest.7ec21485440d306cfa0ea8fc37bf79a8.js",
+    "service-worker.js": "/phone-directory-app/service-worker.js",
+    "static/css/main.42f965f2.chunk.css.map": "/phone-directory-app/static/css/main.42f965f2.chunk.css.map",
+    "static/js/2.cc64363c.chunk.js.LICENSE.txt": "/phone-directory-app/static/js/2.cc64363c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e15a315.js",
+    "static/js/2.cc64363c.chunk.js",
+    "static/css/main.42f965f2.chunk.css",
+    "static/js/main.1a26a71e.chunk.js"
+  ]
+}
